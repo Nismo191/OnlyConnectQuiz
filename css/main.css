@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+    background: #d3ebf7;
+    color: #fff;
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #224479;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 10px;
+}
+
+.main-grid{
+    display: grid;
+    gap: 1rem;
+    padding: 10px;
+
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    align-items: center;
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #5c82c0;
+    font-size: 1rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clue-grid{
+    display: grid;
+    gap: 1rem;
+    padding: 10px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.answer-grid{
+    display: grid;
+    gap: 1rem;
+    padding: 10px;
+
+    grid-template-columns: 1fr;
+
+    align-items: center;
+    justify-items: center;
+
+}
+
+.clue-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #5c82c0;
+    font-size: 1rem;
+    font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    /* overflow: hidden; */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+}
+.clue-card p {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.answer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #24457d;
+    font-size: 1rem;
+    font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    /* overflow: hidden; */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.qmark {
+    font-size: calc(2vw + 2vh + 2vmin)
+}
+
+.timer-bg {
+    border-radius: 4px;
+    height: 30px;
+    width: 100%;
+    background-color: #24457d;
+}
+
+.timer-main{
+    border-radius: 4px;
+    height: 25px;;
+    background-color: #5c82c0;
+    margin: 2px;
+}
+
+.timer1 {
+    width: 0%;
+}
+
+.timer2 {
+    width: 0%;
+}
+
+.timer3 {
+    width: 0%;
+}
+
+.timer4 {
+    width: 0%;
+}
+
+.form {
+    position : relative;
+    width  : 100%;
+    margin : 0 auto;
+    padding: 1em;
+  
+    /* we create our grid */
+    display  : grid;
+    grid-gap : 10px;
+    grid-template-columns : repeat(2, 1fr);
+
+
+    align-items: center;
+    justify-items: center;
+}
+
+.custom-select {
+    position: relative;
+    width: 75%;
+  }
+
+.btn {
+    background-color: #96bbe3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+    margin: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #224479;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .clue-grid{
+        display: grid;
+        gap: 1rem;
+        padding: 10px;
+    
+        grid-template-columns: 1fr 1fr;
+    
+        align-items: center;
+        justify-items: center;
+    }
+
+    .clue-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #5c82c0;
+        font-size: 1rem;
+        font-size: calc(1vw + 1vh + 1vmin);
+        color: #fff;
+        box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        transition: all 500ms;
+        /* overflow: hidden; */
+    
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        aspect-ratio: 1;
+    }
+
+    .answer-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #24457d;
+        font-size: 1rem;
+        font-size: calc(1vw + 1vh + 1vmin);
+        color: #fff;
+        box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        transition: all 500ms;
+        /* overflow: hidden; */
+    
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('./css/main.css');
+    </style>
+
+    <title>Only Connect Quiz</title>
+</head>
+<body id="body" class="connection" onload="startTimer()">
+    <header class="header" id="header-placeholder">
+    </header>
+
+    <div class="clue-grid">
+        <div class="timer-bg">
+            <div class="timer-main timer1" id="timer1"></div>
+        </div>
+        <div class="timer-bg">
+            <div class="timer-main timer2" id="timer2"></div>
+        </div>
+        <div class="timer-bg">
+            <div class="timer-main timer3" id="timer3"></div>
+        </div>
+        <div class="timer-bg">
+            <div class="timer-main timer4" id="timer4"></div>
+        </div>
+
+        <div class="question1 clue-card" id="1question">
+            <p id="q-text" class="qtext"></p>
+        </div>
+
+        <div class="question clue-card" id="2question">
+            <p id="q-text" class="qtext hide"></p>
+            <p class="qmark">?</p>
+        </div>
+
+        <div class="question clue-card" id="3question">
+            <p id="q-text" class="qtext hide"></p>
+            <p class="qmark">?</p>
+        </div>
+
+        <div class="question clue-card" id="4question">
+            <p id="q-text" class="qtext hide"></p>
+            <p class="qmark">?</p>
+        </div>
+    </div>
+    
+    <div class="answer-grid">
+        <div class="answer-card" id="answer">
+            <p id="a-text"class="a-text hide"></p>
+            <p class="answer-hide">Reveal Answer</p>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer-placeholder">>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
